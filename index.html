@@ -9,6 +9,49 @@
     <script src="./index.js"></script>
 </head>
 <body>
-    OMG CALCY
+    <div id="calc">
+        <div id='face'>
+          <div id='eyes'>    
+            <div class='eye'></div>
+            <div class='eye'></div>
+          </div>
+          <div id='cheeks'>
+            <div class='blush'></div>
+            <div class='blush'></div>
+          </div>
+        </div>
+          <input type="text" id="results" class="answerHere">
+              <table>
+                  <tr>
+                      <td class="button" onclick="addNumber('1')">1</td>
+                      <td class="button" onclick="addNumber('2')">2</td>
+                      <td class="button" onclick="addNumber('3')">3</td>
+                      <td class="button" onclick="addition()">+</td>
+                  </tr>
+                  <tr>
+                      <td class="button" onclick="addNumber('4')">4</td>
+                      <td class="button" onclick="addNumber('5')">5</td>
+                      <td class="button" onclick="addNumber('6')">6</td>
+                      <td class="button" onclick="subtraction()">-</td>
+                  </tr>
+                  <tr>
+                      <td class="button" onclick="addNumber('7')">7</td>
+                      <td class="button" onclick="addNumber('8')">8</td>
+                      <td class="button" onclick="addNumber('9')">9</td>
+                      <td class="button" onclick="multiplication()">*</td>
+                  </tr>
+                  <tr>
+                      <td class="button" onclick="signChange()">+/-</td>
+                      <td class="button" onclick="addNumber('0')">0</td>
+                      <td class="button" onclick="equals()">=</td>
+                      <td class="button" onclick='division()'>/</td>
+                  </tr>
+                  <tr>
+              <td class="button" onclick="decimal()">.</td>
+                      <td class="button" onclick='squareRoot()'>√</td>
+                      <td class="button" onclick="deleteLast()">DEL</td>
+                      <td class="button" onclick="clearResults()">C</td>
+              </table>
+          </div>
 </body>
 </html>
